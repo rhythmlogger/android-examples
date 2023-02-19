@@ -1,0 +1,20 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+    }
+}
+dependencies {
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.13.1'
+
+}
+
+allprojects {
+    repositories {
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
